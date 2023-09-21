@@ -1,23 +1,86 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
 * {
-	font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue', cursive;
 }
-body
-{
-	background-color:black;
-	color:white;
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
 }
 button {
-	top:15px;
-	padding:5px;
-	font-size:15px;
-	background-color:rgba(0,0,0,0);
-	color:white;
+    padding: 5px;
+    font-size: 2vw; /* Adjust the font size based on viewport width */
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 10px;
+    border: 0px none black;
+    width: 30%; /* Adjust the width based on the parent container */
 }
 .navbarlogo {
-	width:50px;
-	height:50px;
+    position: relative;
+    width: 7.5vw; /* Adjust the width based on viewport width */
+    height: 7.5vw; /* Adjust the height based on viewport width */
+	margin: auto auto;
+    border-radius: 5px;
+    transition: all .5s;
+}
+@media(min-width:768) {
+	.navbarlogo{
+		width: 10px;
+		height: 10px;
+	}
+}
+.navbarlogo:hover {
+    transform: scale(1.12);
 }
 nav {
-	display : block;text-align : center; 
+    display: block;
+    text-align: center;
+    background-color: white;
+    color: black;
+    position: relative;
+    top: -7px;
+    border-radius: 10px;
+}
+nav button {
+    position: relative;
+    background-color: white;
+    color: black;
+    outline-color: black;
+    outline: 3px solid black;
+    top: -12px;
+    border-radius: 5px;
+	padding:1%;
+    outline: white;
+    transition: all .5s;
+}
+nav button:hover {
+    outline-color: white;
+    background-color: black;
+    color: white;
+}
+.social-icons {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw auto; /* Adjust the margin based on viewport width */
+    transition: all .5s;
+    width: 30vw; /* Adjust the width based on viewport width */
+    height: 30vw; /* Adjust the height based on viewport width */
+}
+.social-icons:hover {
+    transform: scale(1.2);
+}
+.panel {
+    background-image: url('image.jpg');
+    background-size: cover;
+    padding: 2vw; /* Adjust the padding based on viewport width */
+    color: white;
+    text-align: center;
+    border: 3px solid blue;
+    border-radius: 5vw; /* Adjust the border radius based on viewport width */
+    margin: 1vh 10vw; /* Adjust the margin based on viewport width */
+    transition: all .5s;
+}
+.panel:hover {
+    transform: scale(1.15);
 }
