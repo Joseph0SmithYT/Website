@@ -62,10 +62,10 @@ nav button:hover {
     display: block;
     justify-content: center;
     align-items: center;
-    margin: 5vw auto; /* Adjust the margin based on viewport width */
+    margin: 2.5vw auto; /* Adjust the margin based on viewport width */
     transition: all .5s;
-    width: 30vw; /* Adjust the width based on viewport width */
-    height: 30vw; /* Adjust the height based on viewport width */
+    width: 15vw; /* Adjust the width based on viewport width */
+    height: 15vw; /* Adjust the height based on viewport width */
 }
 .social-icons:hover {
     transform: scale(1.2);
@@ -84,3 +84,10 @@ nav button:hover {
 .panel:hover {
     transform: scale(1.15);
 }
+.background {
+
+	background: linear-gradient(to right, rgba(0,0,0, 1), rgba(0,0,0, .125)), url('https://cdn.discordapp.com/attachments/1031364387329552464/1145175927278547034/cancrilogo.jpg');
+	background-size: cover;
+	height: 25vh;
+	width:25vh;
+  }
