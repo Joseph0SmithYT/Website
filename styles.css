@@ -9,10 +9,10 @@ body {
 button {
     padding: 5px;
     font-size: 2vw; /* Adjust the font size based on viewport width */
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     color: white;
     border-radius: 10px;
-    border: 0px none black;
+    border: 2px solid white;
     width: 30%; /* Adjust the width based on the parent container */
 }
 .navbarlogo {

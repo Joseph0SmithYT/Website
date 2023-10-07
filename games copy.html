@@ -17,6 +17,51 @@
     white-space: nowrap;
     width:20vw;
   }
+  .container {
+  position: relative;
+}
+
+
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vh;
+  height:50vh;
+  background: linear-gradient(to left, transparent, black);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container img {
+  width: 50vh;
+  height: 50vh;
+  transition: transform 0.5s;
+}
+
+.image-container:hover img {
+  transform: translateX(125%);
+}
+.image-container:hover .slider-button{
+  transition: opacity .5s;
+  opacity:1;
+  top:50%;
+  left: 50%;
+}
+.slider-button{
+  position:relative;
+  opacity: 0;
+}
 
     
 
@@ -65,5 +110,57 @@
         
         <h3>Cancri</h3><!---->
       </div>
+      
+      <div class="container">
+        <img class="image" src="cancrilogo.png" width="200" height="200">
+          <div class="foldout">
+            <button class="button">Click me</button>
+          </div>
+          </div>
+        <div class="container">
+          <img class="image" src="cancrilogo.png" width="200" height="200">
+            <div class="foldout">
+              <button class="button">Click me</button>
+            </div>
+        </div>
+
+    <script>
+var containers = document.querySelectorAll('.container');
+
+containers.forEach(function(container) {
+  var img = container.querySelector('.image');
+  var btn = container.querySelector('.foldout');
+
+  container.addEventListener('mouseover', function() {
+    img.style.left = '200px';
+    btn.style.left = '0';
+  });
+
+  container.addEventListener('mouseout', function() {
+    img.style.left = '0';
+    btn.style.left = '-100px';
+  });
+});
+
+    </script>
+<style>
+  .container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 10px 0;
+  }
+  .image {
+      position: absolute;
+      left: 0;
+      transition: left 0.5s ease-in-out;
+  }
+  .foldout {
+      position: absolute;
+      left: -100px;
+      transition: left 0.5s ease-in-out;
+  }
+</style>
+
 </body>
 </html>
