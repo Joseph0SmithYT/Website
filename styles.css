@@ -57,7 +57,7 @@ nav button {
     width: 10vw;
     transition: all .5s;
     bottom: 0;
-    margin: 0 0.5vw;
+    margin: 0 0.5vw; /* Adjust the margin based on viewport width */
 }
 nav button:hover {
     outline-color: var(--background-color);
