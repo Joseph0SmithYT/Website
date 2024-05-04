@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "website",
+			"path": "website"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Old"
+	}
+}

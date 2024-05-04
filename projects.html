@@ -1,27 +1,6 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<style>
-  .games-embed {
-
-  
-    background-image: url('image.jpg');
-    background-size: cover;
-    padding: 1vw; /* Adjust the padding based on viewport width */
-    color: white;
-    text-align: center;
-    border: 3px solid blue;
-    border-radius: 25px; /* Adjust the border radius based on viewport width */
-    margin: 1vh auto; /* Adjust the margin based on viewport width */
-    transition: all .5s;
-    white-space: nowrap;
-    width:20vw;
-  }
-  
-
-    
-
-</style>
 <head>
   <div id="header-placeholder"></div>
     <script>
@@ -41,134 +20,17 @@
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    
-      
-      <div class="container">
-        <img class="image" src="Images/Games/regame.png" width="225" height="179">
-          <div class="foldout">
-            <h2>ReGame</h2>
-            <h3>parkour</h3>
-            <a href="https://cancriscoding.itch.io/regame">
-            <button class="button">View</button>
-          </a>
-        </div>
-      </div>
-      <div class="container">
-        <img class="image" src="Images/Games/packing-simulator.png" width="225" height="179">
-        <div class="foldout">
-          <h2>Packing Simulator</h2>
-          <h3>sell boxes or smth idfc</h3>
-          <a href="https://cancriscoding.itch.io/pack-here-cuz-why-not">
-            <button class="button">View</button>
-          </a>
-      </div> 
-    </div>
-          
+  <div class="grid-container">
     <div class="container">
-      <img class="image" src="Images/Games/kart-thingy.png" width="225" height="179">
-      <div class="foldout">
-        <h2>Mario Kart</h2>
-        <h3>I work on it, sometimes</h3>
-          <a href="https://cancriscoding.itch.io/kart-thingy">
-            <button class="button">View</button>
-          </a>
-      </div>
+      <img src="https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_4288,h_2412,c_limit/BlackForest-Germany-GettyImages-147180370.jpg" alt="">
+      <h1>PACKING SIMULATOR</h1>
+      <p>Ship boxes in, or not.</p>
     </div>
-    
     <div class="container">
-      <img class="image" src="Images/Games/strongest-hit.png" width="225" height="179">
-        <div class="foldout">
-          <h2>Strongest Hit</h2>
-          <h3>boxing game</h3>
-            <a href="https://cancriscoding.itch.io/strongest-hit">
-              <button class="button">View</button>
-          </a>
-        </div>
-      </div>
-
-    <script>
-var containers = document.querySelectorAll('.container');
-
-containers.forEach(function(container) {
-  var img = container.querySelector('.image');
-  var btn = container.querySelector('.foldout');
-
-  container.addEventListener('mouseover', function() {
-    img.style.left = '200px';
-    btn.style.left = '0';/*
-    btn.style.background = 'linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1))';/**/
-  });
-
-  container.addEventListener('mouseout', function() {
-    img.style.left = '0';
-    btn.style.left = '-300px';/*
-    btn.style.background = 'linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0))';/**/
-  });
-});
-
-    </script>
-<style>
-  .container {
-      position:relative;
-      width: 200px;
-      height: 179px;
-      margin: 10px ;
-      border-radius: 5px;
-  }.rainbow:hover{
-      animation:gradient-animation 1s ease infinite  ;
-
-  }
-  .image {
-      position: absolute;
-      left: 0;
-      transition: left .5s ease-in-out;
-      border-radius: 5px;
-  }
-  .foldout {
-      position: absolute;
-      left: -300px;
-      transition: left 0.5s ease-in-out;/*
-      background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0));/**/
-      height:179px;
-      width:200px;
-  }
-  @keyframes gradient-animation {
-  0% {
-    
-    background-image: linear-gradient(to right, transparent,rgba(255,255,255,0));
-  }
-  10% {
-    background-image: linear-gradient(to right, transparent,rgba(255,255,255,.1));
-  }
-  20% {
-    background-image: linear-gradient(to right, transparent,rgba(255,255,255,.2));
-  }
-  30% {
-    background-image: linear-gradient(to right, transparent,rgba(255,255,255,.3));
-  }
-  40% {
-    background-image: linear-gradient(to right, transparent,rgba(255,255,255,.4));
-  }
-  50% {
-    background-image: linear-gradient(to right, transparent,rgba(255,255,255,.5));
-  }
-  60% {
-    background-image: linear-gradient(to right, transparent,rgba(255,255,255,.6));
-  }
-  70% {
-    background-image: linear-gradient(to right, transparent,rgba(255,255,255,.7));
-  }
-  80% {
-    background-image: linear-gradient(to right, transparent,rgba(255,255,255,.8));
-  }
-  90% {
-    background-image: linear-gradient(to right, transparent,rgba(255,255,255,.9));
-  }
-  100% {
-    background-image: linear-gradient(to right, transparent,rgba(255,255,255,1));
-  }
-}
-</style>
-
+      <img src="https://cdn.discordapp.com/attachments/1229242059198566493/1236240433429090345/IMG_6415.png?ex=66374a1f&is=6635f89f&hm=bdd3f0231c4e1b33ddd0a9669953d9c74c363ccd6c408a5b769cbf43054e9cc7&" alt="">
+      <h1>GRANDMA SIMULATOR</h1>
+      <p>run</p>
+    </div>
+  </div>
 </body>
 </html>

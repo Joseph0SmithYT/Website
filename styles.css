@@ -28,10 +28,12 @@ button {
 }
 .navbarlogo {
     position: relative;
-    height: 5.5vw; /* Adjust the height based on viewport width */
-    border-radius: 5px;
+    height: 3.5vw; /* Adjust the height based on viewport width */
+    border-radius: 100%;
     transition: all .25s;
-    margin: 0 0.5vw;
+    margin: 0 0.25vw;
+}.navbarlogo:hover {
+    border-radius: 20px;
 }
 @media(min-width:768) {
 	.navbarlogo{
@@ -40,24 +42,30 @@ button {
 	}
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
 nav {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    text-align: center;
+    justify-content: space-evenly;
     position: relative;
     margin-bottom: 2vw;
+    padding: 5px;
+    border-radius: 10px;
 }
 nav button {
-    position: relative;
     color: white;
-    outline: 3px solid --background-color;
+    outline: 3px solid var(--background-color);
     border-radius: 25px;
-	height:5.5vw;
-    width: 10vw;
+	height:3.5vw;
+    width: 8.75vw;
     transition: all .5s;
-    bottom: 0;
-    margin: 0 0.5vw; /* Adjust the margin based on viewport width */
 }
 nav button:hover {
     outline-color: var(--background-color);
@@ -78,6 +86,7 @@ nav button:hover {
     transform: scale(1.2);
 }
 .panel {
+    grid-column: 1;
     background-size: cover;
     padding: 2vw; /* Adjust the padding based on viewport width */
     color: white;
@@ -99,16 +108,37 @@ nav button:hover {
 	width:25vh;
 }
 #about-me {
-    position:absolute;
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 1vh 50px;
-    margin-left: 55vw;
     width: 30vw;
+    height: fit-content;
     z-index: 2;
     outline:3px dashed rgba(255,255,255,.25);
     outline-style: double;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap:2.5vw;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    outline: whitesmoke 1px dashed;
+    max-width: 20vw;
+    padding:1vw;
+}
+.container > img {
+    max-width: 100%;
+    height:auto;
+    border-radius: 3.5%;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
