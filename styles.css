@@ -136,9 +136,12 @@ nav button:hover {
     max-width: 20vw;
     padding:1vw;
 }
+.container > h1 {
+    font-size: 2.5vw;
+}
 .container > img {
-    max-width: 100%;
-    height:auto;
+    width: 100%;
+    height:fit-content;
     border-radius: 3.5%;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
